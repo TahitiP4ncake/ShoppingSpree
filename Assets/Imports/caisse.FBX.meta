@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: b00f6f66252db8d4596e6f2689cd55e7
+timeCreated: 1488017354
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: aubergine
+    100002: aubergine_feuille
+    100004: banane
+    100006: //RootNode
+    100008: caisse006
+    100010: carotte
+    100012: carotte_feuille01
+    100014: carotte_feuille02
+    100016: carotte_feuille03
+    100018: carotte_feuille04
+    100020: carotte_feuille05
+    100022: tomate
+    100024: tomate_feuille
+    400000: aubergine
+    400002: aubergine_feuille
+    400004: banane
+    400006: //RootNode
+    400008: caisse006
+    400010: carotte
+    400012: carotte_feuille01
+    400014: carotte_feuille02
+    400016: carotte_feuille03
+    400018: carotte_feuille04
+    400020: carotte_feuille05
+    400022: tomate
+    400024: tomate_feuille
+    2300000: aubergine
+    2300002: aubergine_feuille
+    2300004: banane
+    2300006: caisse006
+    2300008: carotte
+    2300010: carotte_feuille01
+    2300012: carotte_feuille02
+    2300014: carotte_feuille03
+    2300016: carotte_feuille04
+    2300018: carotte_feuille05
+    2300020: tomate
+    2300022: tomate_feuille
+    3300000: aubergine
+    3300002: aubergine_feuille
+    3300004: banane
+    3300006: caisse006
+    3300008: carotte
+    3300010: carotte_feuille01
+    3300012: carotte_feuille02
+    3300014: carotte_feuille03
+    3300016: carotte_feuille04
+    3300018: carotte_feuille05
+    3300020: tomate
+    3300022: tomate_feuille
+    4300000: carotte
+    4300002: carotte_feuille01
+    4300004: carotte_feuille02
+    4300006: carotte_feuille03
+    4300008: carotte_feuille04
+    4300010: carotte_feuille05
+    4300012: tomate
+    4300014: tomate_feuille
+    4300016: banane
+    4300018: aubergine
+    4300020: aubergine_feuille
+    4300022: caisse006
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
