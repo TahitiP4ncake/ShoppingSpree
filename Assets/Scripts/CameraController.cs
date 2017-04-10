@@ -1,65 +1,174 @@
-﻿
-using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-/// MouseLook rotates the transform based on the mouse delta.
-/// Minimum and Maximum values can be used to constrain the possible rotation
+public class CameraController : MonoBehaviour {
+    //private Vector3 offset;
+    public GameObject Car;
+    public GameObject Muscle;
+
+    private float smoothTime = 0.3f;
+    private Vector3 velocity = Vector3.zero;
+    private Vector3 targetPosition;
+    //private bool dezoom;
+    //private bool zoom;
+
+    public GameObject generator;
+    public Renderer R_car;
+    public Renderer[] R_carList;
+    public GameObject[] lesVoitures;
+    public List<GameObject> voituresPosition;
+
+   // public float ZoomOut;
+	// Use this for initialization
+	void Start () {
+
+       // voituresPosition = new List<GameObject>();
 
 
-/// To make an FPS style character:
-/// - Create a capsule.
-/// - Add the MouseLook script to the capsule.
-///   -> Set the mouse look to use LookX. (You want to only turn character but not tilt it)
-/// - Add FPSInputController script to the capsule
-///   -> A CharacterMotor and a CharacterController component will be automatically added.
-
-
-/// - Create a camera. Make the camera a child of the capsule. Reset it's transform.
-/// - Add a MouseLook script to the camera.
-///   -> Set the mouse look to use LookY. (You want the camera to tilt up and down like a head. The character already turns.)
-[AddComponentMenu("Camera-Control/Mouse Look")]
-public class MouseLook : MonoBehaviour
-{
-
-
-    public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
-    public RotationAxes axes = RotationAxes.MouseXAndY;
-    public float sensitivityX = 15F;
-    public float sensitivityY = 15F;
-    public float minimumX = -360F;
-    public float maximumX = 360F;
-    public float minimumY = -60F;
-    public float maximumY = 60F;
-    float rotationY = 0F;
-    void Update()
-    {
-        if (axes == RotationAxes.MouseXAndY)
-        {
-            float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
-
-            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-        }
-        else if (axes == RotationAxes.MouseX)
-        {
-            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
-        }
-        else
-        {
-            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-        }
+             //offset = transform.position - Car.transform.position; 
     }
-
-    void Start()
+	void Update()
     {
-        // Make the rigid body not change rotation
-        if (GetComponent<Rigidbody>())
-            GetComponent<Rigidbody>().freezeRotation = true;
+        lesVoitures = GameObject.FindGameObjectsWithTag("Player");
+        /*
+        if(dezoom && transform.position.y<150)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x+1.2f, transform.position.y + 1, transform.position.z), ref velocity, 0.1f);
+            //Debug.Log("peut etre");
+        }
+        if(zoom && transform.position.y >60)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x - 1.2f, transform.position.y - 1, transform.position.z), ref velocity, 0.1f);
+            //Debug.Log("zoom");
+        }
+        */
+        //foreach (GameObject Car in lesVoitures)
+        // Debug.Log(lesVoitures);
+        //voituresPosition = generator.GetComponent<List>();
+
+
+        //Debug.Log(voituresPosition.Count);
+        //  voituresPosition = generator.Voitures;
+        //  Debug.Log(voituresPosition);
     }
+	// Update is called once per frame
+   
+	void FixedUpdate () {
+        //Vector3 leMilieu = transform.position;
+        Vector3 leMilieu = Vector3.zero;
+        foreach (GameObject Car  in lesVoitures)
+        {
+            
+            leMilieu =leMilieu+ Car.transform.position;
+            
+            /*//Vector3.Distance(new Vector3(transform.position.x,0, transform.position.z),new Vector3(Car.transform.position.x,0, Car.transform.position.z));
+            Debug.Log(Vector3.Distance(new Vector3(leMilieu.x, 0, leMilieu.z), new Vector3(Car.transform.position.x, 0, Car.transform.position.z)));
+            if (Vector3.Distance(new Vector3(leMilieu.x, 0, leMilieu.z), new Vector3(Car.transform.position.x, 0, Car.transform.position.z)) > 60)
+            {
+                dezoom = true;
+            }
+            else
+            {
+                dezoom = false;
+            }
+
+            if (Vector3.Distance(new Vector3(leMilieu.x, 0, leMilieu.z), new Vector3(Car.transform.position.x, 0, Car.transform.position.z)) <50)
+            {
+                zoom = true;
+
+            }
+            else
+            {
+                zoom = false;
+            }
+            */
+        }
+        
+            leMilieu = leMilieu / (GameObject.FindGameObjectsWithTag("Player").Length);
+        int dehors = 0;
+        int dedans = 0;
+        
+        foreach (GameObject Car in lesVoitures)
+        {
+            
+            //Debug.Log(Car);
+            Vector3 screenPos = GetComponent<Camera>().WorldToScreenPoint(Car.transform.position);
+            //float test = Vector3.Distance(screenPos, transform.position);
+            //Debug.Log(Screen.width / 100 * 80);
+           // float _hauteur = Vector3.Distance(transform.position, leMilieu);
+           // float _ecart = Vector3.Distance(new Vector3(leMilieu.x, 0, leMilieu.z), new Vector3(Car.transform.position.x, 0, Car.transform.position.z));
+            //Debug.Log(Vector3.Distance(new Vector3(leMilieu.x, 0, leMilieu.z), new Vector3(Car.transform.position.x, 0, Car.transform.position.z)));
+            
+            if (screenPos.x<=( GetComponent<Camera>().pixelWidth/ 100*10)|| screenPos.x>= (GetComponent<Camera>().pixelWidth / 100*90)|| screenPos.y<= (GetComponent<Camera>().pixelHeight / 100*10)|| screenPos.y>=(GetComponent<Camera>().pixelHeight / 100*90))
+            {
+                //dezoom = true;
+                Debug.Log("dezoom");
+                //zoom = false;
+                dehors += 1;
+            }
+            else
+            {
+                //dezoom = false;
+            }
+            
+            if (screenPos.x>= (GetComponent<Camera>().pixelWidth / 100*30)&& screenPos.x<=( GetComponent<Camera>().pixelWidth / 100*70)&& screenPos.y>= (GetComponent<Camera>().pixelHeight / 100*30 )&& screenPos.y<= (GetComponent<Camera>().pixelHeight / 100*70))
+            {
+                dedans += 1;
+                //zoom = true;
+                Debug.Log("zoom");
+               // dezoom = false;
+            }
+            else
+            {
+                //zoom = false;
+            }
+            
+            /*
+            if(Car.GetComponentInChildren<Renderer>().isVisible)
+            {
+                dezoom = true;
+            }
+            */
+            
+        }
+    
+        //leMilieu.x += 50;
+        
+        
+        
+        leMilieu.x += 50;
+        //leMilieu.x = leMilieu.x / GameObject.FindGameObjectsWithTag("Player").Length;
+        //leMilieu.z = leMilieu.z / GameObject.FindGameObjectsWithTag("Player").Length;
+        targetPosition = leMilieu ;
+        targetPosition.y = transform.position.y;
+        //targetPosition.x = targetPosition.y;
+         //targetPosition.x += targetPosition.y/2;
+        //Debug.Log(targetPosition);
+        //targetPosition.x = targetPosition.x + 30;
+
+        if (dehors == 2 && transform.position.y < 150)
+        {
+            targetPosition = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + 20f, transform.position.y + 10, transform.position.z), ref velocity, 0.5f);
+            //Debug.Log("peut etre");
+           // targetPosition.x += 20;
+          //  targetPosition.y += 10;
+        }
+        if (dedans == 2 && transform.position.y > 60)
+        {
+           // targetPosition.x -= 20;
+            //targetPosition.y -= 10;
+            targetPosition = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x - 20f, transform.position.y - 10, transform.position.z), ref velocity, 0.5f);
+            //Debug.Log("zoom");
+        }
+
+        if (lesVoitures.Length != 0)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
+        //transform.position = Car.transform.position + offset;
+
+        
+    }
+    
 }

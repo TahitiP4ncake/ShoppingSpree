@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 0209772b3e19c8c48a50032e612ca261
+timeCreated: 1488725596
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: aileron00
+    100002: aileron01
+    100004: aileron02
+    100006: aileron03
+    100008: aileron04
+    100010: aileron05
+    100012: aileron06
+    100014: aileron07
+    100016: aileron08
+    100018: attache
+    100020: attache003
+    100022: //RootNode
+    100024: rocket
+    400000: aileron00
+    400002: aileron01
+    400004: aileron02
+    400006: aileron03
+    400008: aileron04
+    400010: aileron05
+    400012: aileron06
+    400014: aileron07
+    400016: aileron08
+    400018: attache
+    400020: attache003
+    400022: rocket
+    400024: //RootNode
+    2300000: aileron00
+    2300002: aileron01
+    2300004: aileron02
+    2300006: aileron03
+    2300008: aileron04
+    2300010: aileron05
+    2300012: aileron06
+    2300014: aileron07
+    2300016: aileron08
+    2300018: attache
+    2300020: attache003
+    2300022: rocket
+    3300000: aileron00
+    3300002: aileron01
+    3300004: aileron02
+    3300006: aileron03
+    3300008: aileron04
+    3300010: aileron05
+    3300012: aileron06
+    3300014: aileron07
+    3300016: aileron08
+    3300018: attache
+    3300020: attache003
+    3300022: rocket
+    4300000: rocket
+    4300002: aileron00
+    4300004: aileron01
+    4300006: aileron02
+    4300008: aileron03
+    4300010: aileron04
+    4300012: aileron05
+    4300014: aileron06
+    4300016: aileron07
+    4300018: aileron08
+    4300020: attache003
+    4300022: attache
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

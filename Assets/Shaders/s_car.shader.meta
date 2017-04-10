@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: b6ea7451d3f61a849895e8f519ab8117
+timeCreated: 1487154058
+licenseType: Free
+ShaderImporter:
+  defaultTextures:
+  - _CarAlbedo: {fileID: 2800000, guid: f06cd6516b98b3248ab45876073f581a, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
