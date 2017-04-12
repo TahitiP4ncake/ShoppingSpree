@@ -68,7 +68,7 @@ public class CarController : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log( Mathf.Atan2(gamepad.GetStick_L().Y, -gamepad.GetStick_L().X) * 180 / Mathf.PI-90);
+        Debug.Log(Mathf.Atan2(gamepad.GetStick_L().Y, -gamepad.GetStick_L().X) * 180 / Mathf.PI - 90);
         
         IsGrounded();
 
@@ -76,23 +76,23 @@ public class CarController : MonoBehaviour
         angle = transform.localEulerAngles.y;
         angle = (angle > 180) ? angle - 360 : angle;
         
-
+/*
         if (auSol && gamepad.GetButton("A") && (gamepad.GetStick_L().Y < 0.5 && gamepad.GetStick_L().Y > -0.5 && gamepad.GetStick_L().X > -0.5 && gamepad.GetStick_L().X < 0.5) && !gamepad.GetButton("B"))
         {
 
             Move();
-            /*
+            
             if(Turbo.isStopped)
             {
                 Turbo.Play();
             }
-            */
+            
         }
         else
         {
             //Turbo.Stop();
         }
-
+    */
         if ((gamepad.GetStick_L().Y > 0.5 || gamepad.GetStick_L().Y < -0.5 || gamepad.GetStick_L().X < -0.5 || gamepad.GetStick_L().X > 0.5) && auSol)
         {
            
@@ -146,37 +146,18 @@ public class CarController : MonoBehaviour
             }
             
             
-            if ((!gamepad.GetButton("A")) || !auSol)
-            {
-                
-            }
+          
 
         }
+         /*
         if (gamepad.GetButton("B") && auSol)
         {
             marcheArriere();
         }
-        if (gamepad.GetButton("X"))
-        {
-           
-            BarrelRoll();
+        */
        
-        }
-        if (gamepad.GetButton("L3"))
-        {
-           
-            Jump();
-        }
 
-        if (gamepad.GetButtonDown("Y"))
-        {
-            Horn();
-        }
-
-       // m_MovementInputValue = gamepad.GetStick_L().Y;
-        //m_TurnInputValue = gamepad.GetStick_L().X;
-
-        
+       
 
         if (sol)
         {
@@ -216,17 +197,7 @@ public class CarController : MonoBehaviour
     }
    
 
-    private void FixedUpdate()
-    {
-       
-
-      
-        if (BUMP)
-        {
-            Jump();
-           
-        }
-    }
+    
     private void marcheArriere()
     {
         float _hauteur = Car.velocity.y * Time.deltaTime;
@@ -240,16 +211,12 @@ public class CarController : MonoBehaviour
             
 
         }
-        else
-        {
-           
-
-        }
+       
         if (boostOn == true)
         {
             movement = movement * 3.5f;
         }
-        Car.AddForce(movement, ForceMode.Impulse);
+       // Car.AddForce(movement, ForceMode.Impulse);
     }
     private void Move()
     {
@@ -263,48 +230,27 @@ public class CarController : MonoBehaviour
             movement = movement * Boost;
             
         }
-        else
-        {
-         
-            
-        }
-        
+       
         if(boostOn==true)
         {
             movement = movement * 3.5f;
         }
 
       
-        Car.AddForce(movement, ForceMode.Impulse);
+       // Car.AddForce(movement, ForceMode.Impulse);
 
 
     }
 
-    private void Horn()
-    {
-        
-        A_car.pitch = pitch;
-            Harmony.Play(A_car);
-            
-    }
+  
     
      void OnTriggerEnter(Collider boost)
     {
-        if (boost.gameObject.tag == "BOOST")
-        {
-            boostOn = true;
-        }
-        if(boost.gameObject.tag == "BUMPER")
-        {
-            BUMP = true;
-        }
+       
     }
     void OnTriggerExit(Collider boost)
     {
-        if (boost.gameObject.tag == "BOOST")
-        {
-            boostOn = false;
-        }
+       
 
     }
     void OnCollisionEnter(Collision ground)
@@ -331,10 +277,7 @@ public class CarController : MonoBehaviour
             sol = false;
         }
     }
-    private void Run()
-    {
-        Car.velocity = (new Vector3(-m_TurnInputValue * Speed,0, m_MovementInputValue * Speed));
-            }
+    
     
     private void IsGrounded()
     {
@@ -351,6 +294,7 @@ public class CarController : MonoBehaviour
             auSol = false;
         }
     }
+    /*
     private void BarrelRoll()
     {
        
@@ -359,7 +303,7 @@ public class CarController : MonoBehaviour
         {
             Car.AddForce(transform.up * 1.5f, ForceMode.VelocityChange);
 
-            StartCoroutine(getDown());
+            //StartCoroutine(getDown());
         }
         Car.AddRelativeTorque(new Vector3(1, 0, 0) ,ForceMode.VelocityChange );
         
@@ -371,20 +315,22 @@ public class CarController : MonoBehaviour
             
             Car.AddForce(transform.up*1.5f, ForceMode.VelocityChange);
             
-            StartCoroutine(getDown());
+            //StartCoroutine(getDown());
         }
        
         
             Car.AddRelativeTorque(new Vector3(0, 0, 30), ForceMode.VelocityChange);
         BUMP = false;
-    }
+    }*/
+    /*
     IEnumerator getDown()
     {
         yield return new WaitForSecondsRealtime(1.2f);
         Car.AddRelativeForce(new Vector3(0,-2,0),ForceMode.Impulse) ;
         
     }
-
+    */
+/*
 IEnumerator inactif()
     {
         yield return new WaitForSecondsRealtime(3);
@@ -396,7 +342,7 @@ IEnumerator inactif()
         yield return new WaitForSecondsRealtime(3);
         Debug.Log("deconnecte toi");
     }
-   
+   */
     
     
 }
