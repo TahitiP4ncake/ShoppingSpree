@@ -15,13 +15,18 @@ public class CaddieController : MonoBehaviour {
     public float bigBoostSpeed;
     public float bigBoostDuration;
     public float boostRecovery;
+    public float JumpHigh;
+
     private Vector3 direction;
     private float angle;
     private float arriere;
+
     private bool bigBoost;
     private bool bigBoostActive;
     private bool boost;
+    private bool jumpRecovery;
     public float actualSpeed;
+    
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -52,9 +57,17 @@ public class CaddieController : MonoBehaviour {
             }
             if((angle<=-45 && angle>=-175)||(angle>=45 || angle<=-185))
             {
-                arriere = .5f;
-                Turn();
-                Move();
+                if (bigBoost && arriere>0)
+                {
+                    arriere = 1;
+                    Move();
+                }
+                else
+                {
+                    arriere = gamepad.GetStick_L().Y;
+                    Turn();
+                    Move();
+                }
             }
             
         }
@@ -74,6 +87,11 @@ public class CaddieController : MonoBehaviour {
             boost = false;
 
         }
+        if(gamepad.GetButtonDown("X")&& !jumpRecovery)
+        {
+            StartCoroutine(jumpTime());
+            Jump();
+        }
 	}
     IEnumerator Turbo()
     {
@@ -84,10 +102,16 @@ public class CaddieController : MonoBehaviour {
         yield return new WaitForSecondsRealtime(boostRecovery);
         bigBoostActive = false;
     }
+    IEnumerator jumpTime()
+    {
+        jumpRecovery = true;
+        yield return new WaitForSecondsRealtime(1f);
+        jumpRecovery = false;
+    }
     void Move()
     {
         
-        Vector3 movement = transform.forward *-Speed*arriere;
+        Vector3 movement = transform.forward *-Speed *arriere;
         if (bigBoost)
         {
             movement = movement * bigBoostSpeed;
@@ -112,6 +136,11 @@ public class CaddieController : MonoBehaviour {
         transform.rotation = Quaternion.RotateTowards(transform.rotation, turnRotation, step);
     }
 
+    void Jump()
+    {
+        rb.AddForce(transform.up * JumpHigh, ForceMode.VelocityChange);
+
+    }
     void OnCollisionEnter(Collision other)
     {
         /*
