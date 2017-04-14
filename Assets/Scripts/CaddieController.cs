@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CaddieController : MonoBehaviour {
     private GamepadManager manager;
@@ -149,3 +150,7 @@ public class CaddieController : MonoBehaviour {
         }*/
     }
 }
+
+
+
+
