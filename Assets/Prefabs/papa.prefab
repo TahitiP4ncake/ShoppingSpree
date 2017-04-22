@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 222237967843419092}
   - component: {fileID: 114843692900853776}
   m_Layer: 5
-  m_Name: Text
+  m_Name: gameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190005137750964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 0.49, z: -44.7}
+  m_LocalPosition: {x: 3.9, y: 0.75, z: -44.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4266249353005602}
@@ -410,7 +410,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ON NE COURS PAS DANS UN MAGASIN!
+  m_Text: "texte du vigile qui s'affichera entre le vigile et le papa sur l'\xE9cran
+    de fin"
 --- !u!114 &114893209302420576
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -365,6 +365,8 @@ MonoBehaviour:
   target: {fileID: 0}
   rouge: {fileID: 0}
   perdu: {fileID: 0}
+  duration: 0.1
+  magnitude: 1
 --- !u!114 &114388495592610816
 MonoBehaviour:
   m_ObjectHideFlags: 1

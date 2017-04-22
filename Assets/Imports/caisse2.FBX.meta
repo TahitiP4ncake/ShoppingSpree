@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 7c715a1296fbebc4da0b34767a263524
+timeCreated: 1492638873
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: banner
+    100002: Box001
+    100004: Box002
+    100006: Box003
+    100008: button1
+    100010: button10
+    100012: button11
+    100014: button12
+    100016: button13
+    100018: button14
+    100020: button15
+    100022: button16
+    100024: button17
+    100026: button18
+    100028: button19
+    100030: button2
+    100032: button20
+    100034: button21
+    100036: button3
+    100038: button4
+    100040: button5
+    100042: button6
+    100044: button7
+    100046: button8
+    100048: button9
+    100050: //RootNode
+    100052: Cylinder002
+    100054: Cylinder003
+    100056: Cylinder004
+    100058: Cylinder005
+    100060: Cylinder006
+    100062: Cylinder007
+    100064: Cylinder008
+    100066: Cylinder009
+    100068: Cylinder010
+    100070: Cylinder011
+    100072: Cylinder012
+    100074: Cylinder013
+    100076: Cylinder014
+    100078: Cylinder015
+    100080: Cylinder016
+    100082: Cylinder017
+    100084: Cylinder018
+    100086: Cylinder019
+    100088: Cylinder020
+    100090: Cylinder021
+    100092: door
+    100094: drawer
+    100096: Group001
+    100098: higher box
+    100100: higher screen
+    100102: inside cash box
+    100104: key hole
+    100106: keypad
+    100108: keypad box
+    100110: legs
+    100112: lower screen
+    100114: lower shelves
+    100116: mini closet ext
+    100118: outside cash box
+    100120: receit
+    100122: table
+    100124: table foot
+    100126: thing that keeps up higher screen
+    100128: tree banner
+    400000: banner
+    400002: Box001
+    400004: Box002
+    400006: Box003
+    400008: button1
+    400010: button10
+    400012: button11
+    400014: button12
+    400016: button13
+    400018: button14
+    400020: button15
+    400022: button16
+    400024: button17
+    400026: button18
+    400028: button19
+    400030: button2
+    400032: button20
+    400034: button21
+    400036: button3
+    400038: button4
+    400040: button5
+    400042: button6
+    400044: button7
+    400046: button8
+    400048: button9
+    400050: //RootNode
+    400052: Cylinder002
+    400054: Cylinder003
+    400056: Cylinder004
+    400058: Cylinder005
+    400060: Cylinder006
+    400062: Cylinder007
+    400064: Cylinder008
+    400066: Cylinder009
+    400068: Cylinder010
+    400070: Cylinder011
+    400072: Cylinder012
+    400074: Cylinder013
+    400076: Cylinder014
+    400078: Cylinder015
+    400080: Cylinder016
+    400082: Cylinder017
+    400084: Cylinder018
+    400086: Cylinder019
+    400088: Cylinder020
+    400090: Cylinder021
+    400092: door
+    400094: drawer
+    400096: Group001
+    400098: higher box
+    400100: higher screen
+    400102: inside cash box
+    400104: key hole
+    400106: keypad
+    400108: keypad box
+    400110: legs
+    400112: lower screen
+    400114: lower shelves
+    400116: mini closet ext
+    400118: outside cash box
+    400120: receit
+    400122: table
+    400124: table foot
+    400126: thing that keeps up higher screen
+    400128: tree banner
+    2300000: banner
+    2300002: Box001
+    2300004: Box002
+    2300006: Box003
+    2300008: button1
+    2300010: button10
+    2300012: button11
+    2300014: button12
+    2300016: button13
+    2300018: button14
+    2300020: button15
+    2300022: button16
+    2300024: button17
+    2300026: button18
+    2300028: button19
+    2300030: button2
+    2300032: button20
+    2300034: button21
+    2300036: button3
+    2300038: button4
+    2300040: button5
+    2300042: button6
+    2300044: button7
+    2300046: button8
+    2300048: button9
+    2300050: Cylinder002
+    2300052: Cylinder003
+    2300054: Cylinder004
+    2300056: Cylinder005
+    2300058: Cylinder006
+    2300060: Cylinder007
+    2300062: Cylinder008
+    2300064: Cylinder009
+    2300066: Cylinder010
+    2300068: Cylinder011
+    2300070: Cylinder012
+    2300072: Cylinder013
+    2300074: Cylinder014
+    2300076: Cylinder015
+    2300078: Cylinder016
+    2300080: Cylinder017
+    2300082: Cylinder018
+    2300084: Cylinder019
+    2300086: Cylinder020
+    2300088: Cylinder021
+    2300090: door
+    2300092: drawer
+    2300094: higher box
+    2300096: higher screen
+    2300098: inside cash box
+    2300100: key hole
+    2300102: keypad box
+    2300104: lower screen
+    2300106: lower shelves
+    2300108: mini closet ext
+    2300110: outside cash box
+    2300112: receit
+    2300114: table
+    2300116: table foot
+    2300118: thing that keeps up higher screen
+    2300120: tree banner
+    3300000: banner
+    3300002: Box001
+    3300004: Box002
+    3300006: Box003
+    3300008: button1
+    3300010: button10
+    3300012: button11
+    3300014: button12
+    3300016: button13
+    3300018: button14
+    3300020: button15
+    3300022: button16
+    3300024: button17
+    3300026: button18
+    3300028: button19
+    3300030: button2
+    3300032: button20
+    3300034: button21
+    3300036: button3
+    3300038: button4
+    3300040: button5
+    3300042: button6
+    3300044: button7
+    3300046: button8
+    3300048: button9
+    3300050: Cylinder002
+    3300052: Cylinder003
+    3300054: Cylinder004
+    3300056: Cylinder005
+    3300058: Cylinder006
+    3300060: Cylinder007
+    3300062: Cylinder008
+    3300064: Cylinder009
+    3300066: Cylinder010
+    3300068: Cylinder011
+    3300070: Cylinder012
+    3300072: Cylinder013
+    3300074: Cylinder014
+    3300076: Cylinder015
+    3300078: Cylinder016
+    3300080: Cylinder017
+    3300082: Cylinder018
+    3300084: Cylinder019
+    3300086: Cylinder020
+    3300088: Cylinder021
+    3300090: door
+    3300092: drawer
+    3300094: higher box
+    3300096: higher screen
+    3300098: inside cash box
+    3300100: key hole
+    3300102: keypad box
+    3300104: lower screen
+    3300106: lower shelves
+    3300108: mini closet ext
+    3300110: outside cash box
+    3300112: receit
+    3300114: table
+    3300116: table foot
+    3300118: thing that keeps up higher screen
+    3300120: tree banner
+    4300000: table foot
+    4300002: table
+    4300004: lower shelves
+    4300006: tree banner
+    4300008: banner
+    4300010: receit
+    4300012: thing that keeps up higher screen
+    4300014: lower screen
+    4300016: higher screen
+    4300018: button1
+    4300020: button2
+    4300022: button3
+    4300024: button6
+    4300026: button5
+    4300028: button4
+    4300030: button7
+    4300032: button8
+    4300034: button9
+    4300036: button12
+    4300038: button11
+    4300040: button10
+    4300042: button17
+    4300044: button15
+    4300046: button13
+    4300048: button14
+    4300050: button16
+    4300052: button19
+    4300054: button20
+    4300056: button21
+    4300058: button18
+    4300060: key hole
+    4300062: higher box
+    4300064: keypad box
+    4300066: inside cash box
+    4300068: outside cash box
+    4300070: drawer
+    4300072: mini closet ext
+    4300074: door
+    4300076: Cylinder002
+    4300078: Cylinder003
+    4300080: Cylinder004
+    4300082: Cylinder005
+    4300084: Cylinder006
+    4300086: Cylinder007
+    4300088: Cylinder008
+    4300090: Cylinder009
+    4300092: Cylinder010
+    4300094: Cylinder011
+    4300096: Cylinder012
+    4300098: Cylinder013
+    4300100: Cylinder014
+    4300102: Cylinder015
+    4300104: Cylinder016
+    4300106: Cylinder017
+    4300108: Cylinder018
+    4300110: Cylinder019
+    4300112: Cylinder020
+    4300114: Cylinder021
+    4300116: Box001
+    4300118: Box002
+    4300120: Box003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
