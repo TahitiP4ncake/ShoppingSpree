@@ -4,7 +4,6 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class PickUp : MonoBehaviour {
 
-
 	public string itemName;
 	public Collider[] colliders;
 	public bool pikedUp;
