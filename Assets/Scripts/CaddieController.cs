@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class CaddieController : MonoBehaviour {
     private GamepadManager manager;
@@ -27,15 +26,12 @@ public class CaddieController : MonoBehaviour {
     private bool boost;
     private bool jumpRecovery;
     public float actualSpeed;
-    
-    // Use this for initialization
+
     void Start () {
         rb = GetComponent<Rigidbody>();
         manager = GamepadManager.Instance;
         gamepad = manager.GetGamepad(1);
     }
-	
-	// Update is called once per frame
 
 	void Update () {
         actualSpeed = rb.velocity.magnitude;
@@ -72,7 +68,6 @@ public class CaddieController : MonoBehaviour {
             }
             
         }
-        //Debug.Log( Mathf.Atan2(gamepad.GetStick_L().Y, -gamepad.GetStick_L().X) * 180 / Mathf.PI - 90);
 
         //boost puis vitesse augmentée
         if(gamepad.GetButtonDown("A") && !bigBoostActive)
@@ -144,10 +139,7 @@ public class CaddieController : MonoBehaviour {
     }
     void OnCollisionEnter(Collision other)
     {
-        /*
-        if(other.collider.tag == "Block")
-        {   
-        }*/
+
     }
 }
 
