@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4341116640320684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4749200356536166}
   - component: {fileID: 33920313413809308}
   - component: {fileID: 23555811901227794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: boite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,9 +53,9 @@ GameObject:
   - component: {fileID: 4398014105103222}
   - component: {fileID: 114761819822495918}
   - component: {fileID: 54611855666020888}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PetitPoids
-  m_TagString: Untagged
+  m_TagString: pois
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4643714068660226}
   - component: {fileID: 64148336246965034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Physics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1262650681160072}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

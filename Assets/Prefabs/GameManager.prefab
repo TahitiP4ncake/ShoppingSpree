@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1585012991553278}
+  m_IsPrefabParent: 1
+--- !u!1 &1585012991553278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4843816228305008}
+  - component: {fileID: 114680405934117410}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4843816228305008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585012991553278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114680405934117410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585012991553278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9be89c252d1a984391500f8b40d8956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Courses: []
+  Objets: []
+  CoursesTemp: []
+  nombreCourses: 10
+  itemMax: 6
+  carottesN: 0
+  carottesO: 0
+  carottesG: {fileID: 1611904164268588, guid: 1e2184f08ef99ef4b89c553ba8384670, type: 2}
+  tomatesN: 0
+  tomatesO: 0
+  tomatesG: {fileID: 1150420040821274, guid: fd68faff0b126cf48bedfbcbd865ff97, type: 2}
+  sodaN: 0
+  sodaO: 0
+  sodaG: {fileID: 1924171513701212, guid: 344c7c710c1e32b4285a11cef331d0a1, type: 2}
+  ananasN: 0
+  ananasO: 0
+  ananasG: {fileID: 1461581249908920, guid: 58d8b362d5debb444977018e76678d6e, type: 2}
+  cassouletO: 0
+  cassouletN: 0
+  cassouletG: {fileID: 1448831482469692, guid: 352a188006ee0fd4ebee6b9d457afd84, type: 2}
+  poisN: 0
+  poisO: 0
+  poisG: {fileID: 1262650681160072, guid: 3dd2f4ce842ddaf4f93582a3308c8de5, type: 2}
+  liste: {fileID: 0}
+  Warning: {fileID: 0}
+  Spawn:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.002861023
+      value: -0.004737854
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.07661989
+      value: 1.0453758
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.13794193
+      value: 0.9011821
+      inSlope: -0.7522106
+      outSlope: -0.7522106
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.167198
+      value: 0.9934387
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99897105
+      value: 0.98679245
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  papaPickUp: {fileID: 0}
