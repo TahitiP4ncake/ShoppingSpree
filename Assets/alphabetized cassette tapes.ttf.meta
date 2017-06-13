@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 129cb2a122c1eea448d6db98e5ca9950
+timeCreated: 1497373144
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: alphabetized cassette tapes
+  fontNames:
+  - alphabetized cassette tapes
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

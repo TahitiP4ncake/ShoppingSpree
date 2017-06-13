@@ -421,7 +421,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   papa: {fileID: 65219556289707086}
   coursesTransform: {fileID: 1486106916847186}
+  manager: {fileID: 0}
   Courses: []
+  Price: 0
+  priceText: {fileID: 0}
+  priceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.0011253357
+      value: 1.4935379
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.07195161
+      value: -14.953817
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.17620103
+      value: 19.989964
+      inSlope: -0.16272068
+      outSlope: -0.16272068
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.20026271
+      value: 1.4382154
+      inSlope: -0.057232846
+      outSlope: -0.057232846
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99224854
+      value: 2.106247
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114612338767606898
 MonoBehaviour:
   m_ObjectHideFlags: 1

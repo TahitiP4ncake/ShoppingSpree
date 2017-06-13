@@ -7,6 +7,12 @@ TagManager:
   - Block
   - Created
   - Rayon
+  - carotte
+  - soda
+  - ananas
+  - tomate
+  - cassoulet
+  - pois
   layers:
   - Default
   - TransparentFX
