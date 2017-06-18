@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: f6b3cfd1a30c625409279f5696f30bef
+timeCreated: 1497542238
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: avantBrasD
+    100002: avantBrasG
+    100004: Bone001
+    100006: brasD
+    100008: brasGq
+    100010: Circle001
+    100012: epauleD
+    100014: epauleG
+    100016: Hair002
+    100018: hancheD
+    100020: hancheG
+    100022: jambeD
+    100024: jambeG
+    100026: mainD
+    100028: mainG
+    100030: master
+    100032: molletD
+    100034: molletG
+    100036: papa
+    100038: piedD
+    100040: //RootNode
+    100042: teteBas
+    100044: teteHaut
+    100046: teteHaut_c
+    100048: torse
+    100050: ventre
+    100052: bassin_c
+    100054: epaule_c
+    100056: mainD_c
+    100058: mainG_c
+    100060: piedD_c
+    100062: piedG_c
+    100064: teteBas_c
+    100066: torse_c
+    400000: avantBrasD
+    400002: avantBrasG
+    400004: Bone001
+    400006: brasD
+    400008: brasGq
+    400010: Circle001
+    400012: epauleD
+    400014: epauleG
+    400016: Hair002
+    400018: hancheD
+    400020: hancheG
+    400022: jambeD
+    400024: jambeG
+    400026: mainD
+    400028: mainG
+    400030: master
+    400032: molletD
+    400034: molletG
+    400036: papa
+    400038: piedD
+    400040: //RootNode
+    400042: teteBas
+    400044: teteHaut
+    400046: teteHaut_c
+    400048: torse
+    400050: ventre
+    400052: bassin_c
+    400054: epaule_c
+    400056: mainD_c
+    400058: mainG_c
+    400060: piedD_c
+    400062: piedG_c
+    400064: teteBas_c
+    400066: torse_c
+    2300000: Hair002
+    2300002: bassin_c
+    2300004: Circle001
+    2300006: epaule_c
+    2300008: mainD_c
+    2300010: mainG_c
+    2300012: piedD_c
+    2300014: piedG_c
+    2300016: teteBas_c
+    2300018: teteHaut_c
+    2300020: torse_c
+    3300000: Hair002
+    3300002: bassin_c
+    3300004: Circle001
+    3300006: epaule_c
+    3300008: mainD_c
+    3300010: mainG_c
+    3300012: piedD_c
+    3300014: piedG_c
+    3300016: teteBas_c
+    3300018: teteHaut_c
+    3300020: torse_c
+    4300000: papa
+    4300002: Hair002
+    4300004: piedG_c
+    4300006: piedD_c
+    4300008: torse_c
+    4300010: epaule_c
+    4300012: teteBas_c
+    4300014: teteHaut_c
+    4300016: Circle001
+    4300018: bassin_c
+    4300020: mainG_c
+    4300022: mainD_c
+    7400000: client@idle4
+    7400002: client@idle2
+    7400004: client@idle3
+    7400006: client@idle1
+    9500000: //RootNode
+    13700000: papa
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: client@idle4
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: papa
+        weight: 1
+      - path: teteHaut_c
+        weight: 1
+      - path: teteHaut_c/Circle001
+        weight: 1
+      - path: teteHaut_c/Circle001/master
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD/piedD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG/Bone001
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD/mainD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG/mainG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut/Hair002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: client@idle2
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: papa
+        weight: 1
+      - path: teteHaut_c
+        weight: 1
+      - path: teteHaut_c/Circle001
+        weight: 1
+      - path: teteHaut_c/Circle001/master
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD/piedD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG/Bone001
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD/mainD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG/mainG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut/Hair002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: client@idle3
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: papa
+        weight: 1
+      - path: teteHaut_c
+        weight: 1
+      - path: teteHaut_c/Circle001
+        weight: 1
+      - path: teteHaut_c/Circle001/master
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD/piedD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG/Bone001
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD/mainD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG/mainG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut/Hair002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: client@idle1
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: papa
+        weight: 1
+      - path: teteHaut_c
+        weight: 1
+      - path: teteHaut_c/Circle001
+        weight: 1
+      - path: teteHaut_c/Circle001/master
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheD/jambeD/molletD/piedD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/hancheG/jambeG/molletG/Bone001
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleD/brasD/avantBrasD/mainD
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/epauleG/brasGq/avantBrasG/mainG
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut
+        weight: 1
+      - path: teteHaut_c/Circle001/master/ventre/torse/teteBas/teteHaut/Hair002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 7
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

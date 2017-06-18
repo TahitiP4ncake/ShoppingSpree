@@ -70,6 +70,10 @@ ModelImporter:
     100124: table foot
     100126: thing that keeps up higher screen
     100128: tree banner
+    100130: cash register
+    100132: mini closet
+    100134: pole
+    100136: ecran
     400000: banner
     400002: Box001
     400004: Box002
@@ -135,6 +139,10 @@ ModelImporter:
     400124: table foot
     400126: thing that keeps up higher screen
     400128: tree banner
+    400130: cash register
+    400132: mini closet
+    400134: pole
+    400136: ecran
     2300000: banner
     2300002: Box001
     2300004: Box002
@@ -196,6 +204,10 @@ ModelImporter:
     2300116: table foot
     2300118: thing that keeps up higher screen
     2300120: tree banner
+    2300122: cash register
+    2300124: mini closet
+    2300126: pole
+    2300128: ecran
     3300000: banner
     3300002: Box001
     3300004: Box002
@@ -257,6 +269,10 @@ ModelImporter:
     3300116: table foot
     3300118: thing that keeps up higher screen
     3300120: tree banner
+    3300122: cash register
+    3300124: mini closet
+    3300126: pole
+    3300128: ecran
     4300000: table foot
     4300002: table
     4300004: lower shelves
@@ -318,6 +334,10 @@ ModelImporter:
     4300116: Box001
     4300118: Box002
     4300120: Box003
+    4300122: pole
+    4300124: cash register
+    4300126: mini closet
+    4300128: ecran
   materials:
     importMaterials: 1
     materialName: 0
@@ -328,6 +348,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

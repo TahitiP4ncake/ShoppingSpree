@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class lookat : MonoBehaviour {
-    public Transform target;
+    private Transform target;
     // Use this for initialization
     void Start () {
-		
+        target = Camera.main.transform;
 	}
 
 

@@ -11,6 +11,8 @@ public class papaCamera : MonoBehaviour {
     public float SmoothTime = 0.1f;
     public float duration=.1f;
     public float magnitude=1;
+
+    public bool GameOn=true;
 	void Start () {
         offset = transform.position - papa.transform.position;
         orientation = transform.rotation * papa.transform.rotation;
@@ -28,8 +30,11 @@ public class papaCamera : MonoBehaviour {
     }
     void FixedUpdate()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, papa.transform.position + offset, ref velocity, SmoothTime);
-        transform.rotation = Quaternion.Slerp(transform.rotation, papa.transform.rotation, 0.1f+Time.deltaTime);
+        if (GameOn)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, papa.transform.position + offset, ref velocity, SmoothTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, papa.transform.rotation, 0.1f + Time.deltaTime);
+        }
     }
     IEnumerator Shake()
     {

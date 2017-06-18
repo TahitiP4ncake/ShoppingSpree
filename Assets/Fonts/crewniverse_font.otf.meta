@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2309288b45b457e4e9b19cec43c70a17
+timeCreated: 1497543968
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Crewniverse
+  fontNames:
+  - Crewniverse
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
