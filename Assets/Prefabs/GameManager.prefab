@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4843816228305008}
   - component: {fileID: 114680405934117410}
+  - component: {fileID: 114222892590267098}
+  - component: {fileID: 114074484613304998}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -40,6 +42,112 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114074484613304998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585012991553278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2855536a1e08804896f4f6f1cf7b6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  Bip:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.045457684
+      value: 1.1480103
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.09090905
+      value: 0.8916931
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.12625554
+      value: 0.99638367
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  lowBip:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.04039629
+      value: 1.0186809
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.07089255
+      value: 0.971973
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.099936604
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  gameOn: 1
+  seconde: 35
+  ombre: {fileID: 0}
+  papa: {fileID: 0}
+--- !u!114 &114222892590267098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585012991553278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be055bc44526a546ba068a4b678b94d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  papa: {fileID: 0}
+  winTransform: {fileID: 0}
+  POV: {fileID: 0}
+  timer: {fileID: 114074484613304998}
+  winOn: 0
+  timerI: {fileID: 0}
+  timerT: {fileID: 0}
 --- !u!114 &114680405934117410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,9 +161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Courses: []
   Objets: []
-  CoursesTemp: []
+  Rayons: []
   nombreCourses: 10
-  itemMax: 6
+  itemMax: 20
   carottesN: 0
   carottesO: 0
   carottesG: {fileID: 1611904164268588, guid: 1e2184f08ef99ef4b89c553ba8384670, type: 2}
@@ -74,6 +182,48 @@ MonoBehaviour:
   poisN: 0
   poisO: 0
   poisG: {fileID: 1262650681160072, guid: 3dd2f4ce842ddaf4f93582a3308c8de5, type: 2}
+  aubergineN: 0
+  aubergineO: 0
+  aubergineG: {fileID: 1656085487112176, guid: 70b920ceca16f374f8bfc833a48bfb5b, type: 2}
+  baguetteN: 0
+  baguetteO: 0
+  baguetteG: {fileID: 1704048850341110, guid: 2ba2dea956edb9644bac7633789372b1, type: 2}
+  bananeN: 0
+  bananeO: 0
+  bananeG: {fileID: 1745789057388180, guid: 8680af24bc91203468260b37ab9ebc48, type: 2}
+  eauN: 0
+  eauO: 0
+  eauG: {fileID: 1776750249463858, guid: 3063548893d102c45bb3ec217cd92ad6, type: 2}
+  jusN: 0
+  jusO: 0
+  jusG: {fileID: 1910338191848742, guid: 89c637b7e7d7227408d122bde6829ee0, type: 2}
+  citronN: 0
+  citronO: 0
+  citronG: {fileID: 1913660040338064, guid: 0d7d5b8592e548144a99967eddc01d4b, type: 2}
+  laitN: 0
+  laitO: 0
+  laitG: {fileID: 1308503458143850, guid: b9d2a910e06b91249b8793367513d706, type: 2}
+  orangeN: 0
+  orangeO: 0
+  orangeG: {fileID: 1872801847385864, guid: 30cf4d1161a4e1042a511b93aa99612c, type: 2}
+  pqN: 0
+  pqO: 0
+  pqG: {fileID: 1477369510477044, guid: c617fd3d357bc8042a3ed9e5d2ed64c4, type: 2}
+  yogurtN: 0
+  yogurtO: 0
+  yogurtG: {fileID: 1471118840706032, guid: 656ee39b650322c4b8a2d95862770c32, type: 2}
+  fromageN: 0
+  fromageO: 0
+  fromageG: {fileID: 1134381911573682, guid: 803dee5b6608c634eaaf79e776548e1d, type: 2}
+  marmeladeN: 0
+  marmeladeO: 0
+  marmeladeG: {fileID: 1903524837894634, guid: a9974f1639f52aa479fdaf077153beed, type: 2}
+  pizzaN: 0
+  pizzaO: 0
+  pizzaG: {fileID: 1560656768828150, guid: 498735960da86eb4fa83acfef9a777d1, type: 2}
+  eggN: 0
+  eggO: 0
+  eggG: {fileID: 1455283448695512, guid: c2436d26511c9fe48b672f35560685b1, type: 2}
   liste: {fileID: 0}
   Warning: {fileID: 0}
   Spawn:
@@ -86,20 +236,20 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.07661989
-      value: 1.0453758
+      time: 0.05132082
+      value: 1.041584
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.13794193
-      value: 0.9011821
+      time: 0.085657686
+      value: 0.950468
       inSlope: -0.7522106
       outSlope: -0.7522106
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.167198
-      value: 0.9934387
+      time: 0.13178235
+      value: 0.9896469
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -113,3 +263,63 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   papaPickUp: {fileID: 0}
+  exitY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.003376007
+      value: 0.0029525757
+      inSlope: 14.198416
+      outSlope: 14.198416
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.50182486
+      value: 5.036257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0018412
+      value: -4.9968047
+      inSlope: 0.019337194
+      outSlope: 0.019337194
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.4997559
+      value: -0.023460388
+      inSlope: 13.830489
+      outSlope: 13.830489
+      tangentMode: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  exitSize:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0.13721119
+      outSlope: 0.13721119
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.5018533
+      value: 1.0504638
+      inSlope: 0.0011920929
+      outSlope: 0.0011920929
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0062296
+      value: 0.9503038
+      inSlope: -0.004073342
+      outSlope: -0.004073342
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.501761
+      value: 0.9993795
+      inSlope: 0.1791035
+      outSlope: 0.1791035
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 1
+    m_RotationOrder: 0

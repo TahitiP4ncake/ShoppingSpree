@@ -94,10 +94,10 @@ public class gameOver : MonoBehaviour {
         {
             //isShaking = false;
             
-            GetComponent<Camera>().transform.SetParent(papa);
+            //GetComponent<Camera>().transform.SetParent(papa);
             //transform.localPosition = origin;
-            transform.localPosition = Vector3.SmoothDamp(transform.localPosition, origin, ref velocity, 0.01f);
-            transform.localRotation = originR;
+            //transform.localPosition = Vector3.SmoothDamp(transform.localPosition, origin, ref velocity, 0.01f);
+            //transform.localRotation = originR;
             aColor = rouge.color;
             aColor.a = 0;
             rouge.color = aColor;
